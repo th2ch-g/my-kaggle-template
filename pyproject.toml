@@ -1,16 +1,17 @@
 [project]
-name = "mdtbx"
+name = "kaggle-template"
 version = "0.1.0"
-description = "ToolBox for MD simulation"
+description = "kaggle environment"
 readme = "README.md"
 requires-python = "==3.11"
-dependencies = []
+dependencies = ["hydra-core"]
 
 [tool.pixi.project]
 channels = ["conda-forge"]
 platforms = ["linux-64", "osx-arm64"]
 
 [tool.pixi.dependencies]
+hydra-core = "*"
 
 [tool.pixi.pypi-dependencies]
 # ref: https://github.com/Kaggle/docker-python/blob/main/kaggle_requirements.txt
